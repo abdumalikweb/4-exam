@@ -1,0 +1,40 @@
+#header {
+  position: fixed;
+  background: $Black;
+  nav {
+    padding: 10px 0;
+    background: $Black !important;
+    .navbar-collapse {
+      flex-grow: 0;
+      ul {
+        li {
+          padding: 0px 12px;
+          a {
+            color: white;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            &:hover {
+              color: $Yellow;
+            }
+          }
+        }
+      }
+      button {
+        font-family: "Sen";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: $Black;
+        padding: 16px 48px;
+        background: white;
+        &:hover {
+          background: $Yellow;
+        }
+      }
+    }
+  }
+}
