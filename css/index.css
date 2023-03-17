@@ -158,4 +158,52 @@ main #blogs .carusel .card .card-body {
   main #blogs .carusel .card {
     width: 100%;
   }
+}
+main #catagory {
+  padding: 50px 0px;
+}
+main #catagory .catagory_title {
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+main #catagory .item {
+  border: 1px solid #d4d5df;
+  padding: 32px;
+}
+main #catagory .item:hover {
+  background: #ffd050;
+  border: #ffd050;
+}
+main #catagory .item:hover .catalog_img {
+  background: #fbf6ea;
+  border-radius: 15px;
+}
+main #catagory .item .catalog_img {
+  max-width: 50px;
+  height: 50px;
+}
+main #catagory .item .catalog_img img {
+  width: 100%;
+}
+main #catagory .item .cotalog_title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: #232536;
+}
+main #catagory .item .cotalog_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 232px;
+  color: #6d6e76;
 }/*# sourceMappingURL=index.css.map */

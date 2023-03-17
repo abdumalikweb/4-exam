@@ -109,4 +109,53 @@ main {
       }
     }
   }
+
+  #catagory {
+    padding: 50px 0px;
+    .catagory_title {
+      padding-bottom: 50px;
+      text-align: center;
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+    }
+    .item {
+      border: 1px solid #d4d5df;
+      padding: 32px;
+      &:hover {
+        background: $Yellow;
+        border: $Yellow;
+        .catalog_img {
+          background: #fbf6ea;
+          border-radius: 15px;
+        }
+      }
+      .catalog_img {
+        max-width: 50px;
+        height: 50px;
+        img {
+          width: 100%;
+        }
+      }
+      .cotalog_title {
+        font-family: "Sen";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: #232536;
+      }
+      .cotalog_text {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 232px;
+        color: #6d6e76;
+      }
+    }
+  }
 }

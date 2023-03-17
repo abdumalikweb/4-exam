@@ -79,7 +79,10 @@
         <div class="container">
           <h2 class="blogs-title">Popular blogs</h2>
 
-          <div class="owl-carousel owl-theme carusel" data-aos="fade-up">
+          <div
+            class="sajid-1 owl-carousel owl-theme carusel"
+            data-aos="fade-up"
+          >
             <div class="item">
               <div class="card">
                 <img
@@ -146,20 +149,54 @@
           </div>
         </div>
       </section>
-      <section class="catagory pt-20">
+      <section id="catagory">
         <div class="container">
-          <h2>Choose A Catagory</h2>
+          <h2 class="catagory_title">Choose A Catagory</h2>
           <div class="owl-carousel owl-theme">
+            <div class="item" >
+              <a href="#">
+                <div class="catalog_img">
+                  <img src="./images/index_main/Icon.svg" alt="" />
+                </div>
+                <h3 class="cotalog_title">Business</h3>
+                <p class="cotalog_text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+              </a>
+            </div>
             <div class="item">
               <div>
-                <img src="./images/index_main/Icon.svg" alt="" />
-                <h4>Business</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <div class="catalog_img">
+                  <img src="./images/index_main/Icon.svg" alt="" />
+                </div>
+                <h3 class="cotalog_title">Business</h3>
+                <p class="cotalog_text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
               </div>
             </div>
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
+            <div class="item">
+              <div>
+                <div class="catalog_img">
+                  <img src="./images/index_main/Icon.svg" alt="" />
+                </div>
+                <h3 class="cotalog_title">Business</h3>
+                <p class="cotalog_text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="catalog_img">
+                  <img src="./images/index_main/Icon.svg" alt="" />
+                </div>
+                <h3 class="cotalog_title">Business</h3>
+                <p class="cotalog_text">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -168,26 +205,9 @@
     <script src="./owlcarucel/jquary.main.js"></script>
     <script src="./owlcarucel/owl.carousel.min.js"></script>
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./owlcarucel/carusel.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          450: {
-            items: 2,
-          },
-          1200: {
-            items: 3,
-          },
-        },
-      });
     </script>
   </body>
 </html>
