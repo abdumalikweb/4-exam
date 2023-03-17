@@ -52,6 +52,9 @@ ul {
 #header nav .navbar-collapse button:hover {
   background: #ffd050;
 }
+#header nav .navbar-collapse button a {
+  color: black;
+}
 
 footer {
   background: #232536;
