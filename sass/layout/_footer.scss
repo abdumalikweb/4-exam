@@ -1,0 +1,26 @@
+footer {
+  background: $Black;
+  padding: 40px 0px;
+  p {
+    color: white;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .footer_right {
+      display: flex;
+      align-items: center;
+      // justify-content: space-evenly;
+      img{
+        padding-left: 15px;
+      }
+    }
+  }
+}

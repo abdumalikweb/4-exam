@@ -19,14 +19,13 @@ $(".sajid-1 ").owlCarousel({
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
-  nav: false,
-  dots: false,
+  dots: true,
   responsive: {
     0: {
-      items: 2,
+      items: 1,
     },
-    800: {
-      items: 3,
+    700: {
+      items: 2,
     },
     1200: {
       items: 4,
