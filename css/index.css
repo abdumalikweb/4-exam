@@ -144,8 +144,8 @@ main #blogs .blogs-title {
   line-height: 48px;
 }
 main #blogs .carusel {
-  padding-bottom: 100px;
-  justify-content: space-between;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #d7d9e1;
 }
 main #blogs .carusel .card {
   border: none;

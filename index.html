@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./owlcarucel/owl.carousel.min.css" />
     <link rel="stylesheet" href="./owlcarucel/owl.theme.default.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Index</title>
   </head>
@@ -59,7 +60,7 @@
       <section id="home">
         <img src="./images/index_main/mainhero.png" alt="" />
         <div class="container">
-          <div class="information_post">
+          <div class="information_post" data-aos="fade-right">
             <p class="blog_name">Posted on startup</p>
             <h2 class="post_title">
               Step-by-step guide to choosing great font pairs
@@ -78,7 +79,7 @@
         <div class="container">
           <h2 class="blogs-title">Popular blogs</h2>
 
-          <div class="owl-carousel owl-theme carusel">
+          <div class="owl-carousel owl-theme carusel" data-aos="fade-up">
             <div class="item">
               <div class="card">
                 <img
@@ -145,17 +146,36 @@
           </div>
         </div>
       </section>
+      <section class="catagory pt-20">
+        <div class="container">
+          <h2>Choose A Catagory</h2>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div>
+                <img src="./images/index_main/Icon.svg" alt="" />
+                <h4>Business</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <script src="./owlcarucel/carusel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./owlcarucel/jquary.main.js"></script>
     <script src="./owlcarucel/owl.carousel.min.js"></script>
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
     <script>
+      AOS.init();
+    </script>
+    <script>
       $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
-        nav: false,
+        nav: true,
         responsive: {
           0: {
             items: 1,
