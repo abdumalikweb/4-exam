@@ -1,6 +1,5 @@
 @import "../global";
 main {
-  background: $White;
   #home {
     height: 100vh;
     background: radial-gradient(
@@ -17,7 +16,7 @@ main {
     }
     .information_post {
       position: absolute;
-      top: 40vh;
+      top: 35vh;
       left: 50;
       .blog_name {
         font-family: "Inter";
@@ -79,6 +78,35 @@ main {
         color: #232536;
         background: #ffd050;
         padding: 1rem 2rem;
+        &:hover {
+          background: #e8b016;
+        }
+      }
+    }
+  }
+  #blogs {
+    .blogs-title {
+      padding-top: 70px;
+      padding-bottom: 50px;
+      font-family: "Sen";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+    }
+    .carusel {
+      padding-bottom: 100px;
+      // display: flex;
+      justify-content: space-between;
+      .card {
+        border: none;
+        width: 98%;
+        .card-body {
+          padding: 10px 0px;
+        }
+        @media screen and(max-width:1200px) {
+          width: 100%;
+        }
       }
     }
   }

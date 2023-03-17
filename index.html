@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./owlcarucel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owlcarucel/owl.theme.default.min.css" />
+
     <title>Index</title>
   </head>
   <body>
@@ -67,17 +70,104 @@
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident.
             </p>
-            <button type="button" class="btn ">Read More ></button>
+            <button type="button" class="btn">Read More ></button>
           </div>
         </div>
       </section>
-      <section>
+      <section id="blogs">
         <div class="container">
-          
+          <h2 class="blogs-title">Popular blogs</h2>
+
+          <div class="owl-carousel owl-theme carusel">
+            <div class="item">
+              <div class="card">
+                <img
+                  src="./images/index_main/card.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>By <span>John Doe </span> l Aug 23, 2021</p>
+                  <h4 class="card-title">
+                    A UX Case Study Creating a Studious Environment for
+                    Students:
+                  </h4>
+                  <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  src="./images/index_main/card.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>By <span>John Doe </span> l Aug 23, 2021</p>
+                  <h4 class="card-title">
+                    A UX Case Study Creating a Studious Environment for
+                    Students:
+                  </h4>
+                  <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <img
+                  src="./images/index_main/card.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p>By <span>John Doe </span> l Aug 23, 2021</p>
+                  <h4 class="card-title">
+                    A UX Case Study Creating a Studious Environment for
+                    Students:
+                  </h4>
+                  <p class="card-text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-  
+
+    <script src="./owlcarucel/carusel.js"></script>
+    <script src="./owlcarucel/jquary.main.js"></script>
+    <script src="./owlcarucel/owl.carousel.min.js"></script>
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          450: {
+            items: 2,
+          },
+          1200: {
+            items: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
