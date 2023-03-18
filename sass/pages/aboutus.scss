@@ -1,0 +1,155 @@
+@import "../global";
+
+main {
+  #about_us {
+    padding-top: 120px;
+    .about {
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #f4f0f8;
+      .about_right {
+        width: 49%;
+        padding: 40px;
+        .titleup {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #232536;
+        }
+        .about_title {
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 40px;
+          letter-spacing: -1px;
+          color: #232536;
+          max-width: 450px;
+        }
+        .about_text {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #6d6e76;
+          max-width: 516px;
+        }
+        @media screen and(max-width: 770px) {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  #ourteam {
+    padding-top: 100px;
+    .ourteam {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .ourteam_left {
+        width: 49%;
+        h3 {
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 48px;
+          letter-spacing: -2px;
+          color: #232536;
+        }
+        h5 {
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+          color: #232536;
+        }
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #232536;
+        }
+      }
+      .ourteam_right {
+        width: 49%;
+        img {
+          width: 100%;
+        }
+      }
+      @media screen and(max-width: 991px) {
+        flex-direction: column-reverse;
+        .ourteam_left {
+          width: 100%;
+        }
+        .ourteam_right {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #blog {
+    padding: 120px 0px;
+
+    .blog {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .blog_right {
+        width: 49%;
+        img {
+          width: 100%;
+        }
+      }
+      .blog_left {
+        width: 49%;
+        h3 {
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 48px;
+          letter-spacing: -2px;
+          color: #232536;
+        }
+        h5 {
+          font-family: "Sen";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+          color: #232536;
+        }
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #232536;
+        }
+      }
+      @media screen and(max-width: 991px) {
+        .blog_left {
+          width: 100%;
+        }
+        .blog_right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

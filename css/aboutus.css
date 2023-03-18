@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  position: fixed;
+  background: #232536;
+}
+#header nav {
+  padding: 10px 0;
+  background: #232536 !important;
+}
+#header nav .navbar-collapse {
+  flex-grow: 0;
+}
+#header nav .navbar-collapse ul li {
+  padding: 0px 12px;
+}
+#header nav .navbar-collapse ul li a {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+#header nav .navbar-collapse ul li a:hover {
+  color: #ffd050;
+}
+#header nav .navbar-collapse button {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232536;
+  padding: 16px 48px;
+  background: white;
+}
+#header nav .navbar-collapse button:hover {
+  background: #ffd050;
+}
+#header nav .navbar-collapse button a {
+  color: black;
+}
+
+footer {
+  background: #232536;
+  padding: 40px 0px;
+}
+footer p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .footer .footer_right {
+  display: flex;
+  align-items: center;
+}
+footer .footer .footer_right img {
+  padding-left: 15px;
+}
+
+main #about_us {
+  padding-top: 120px;
+}
+main #about_us .about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f4f0f8;
+}
+main #about_us .about .about_right {
+  width: 49%;
+  padding: 40px;
+}
+main #about_us .about .about_right .titleup {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #232536;
+}
+main #about_us .about .about_right .about_title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #232536;
+  max-width: 450px;
+}
+main #about_us .about .about_right .about_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+  max-width: 516px;
+}
+@media screen and (max-width: 770px) {
+  main #about_us .about .about_right {
+    width: 100%;
+    padding: 10px;
+  }
+}
+main #ourteam {
+  padding-top: 100px;
+}
+main #ourteam .ourteam {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main #ourteam .ourteam .ourteam_left {
+  width: 49%;
+}
+main #ourteam .ourteam .ourteam_left h3 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+}
+main #ourteam .ourteam .ourteam_left h5 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232536;
+}
+main #ourteam .ourteam .ourteam_left p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+}
+main #ourteam .ourteam .ourteam_right {
+  width: 49%;
+}
+main #ourteam .ourteam .ourteam_right img {
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  main #ourteam .ourteam {
+    flex-direction: column-reverse;
+  }
+  main #ourteam .ourteam .ourteam_left {
+    width: 100%;
+  }
+  main #ourteam .ourteam .ourteam_right {
+    width: 100%;
+  }
+}
+main #blog {
+  padding: 120px 0px;
+}
+main #blog .blog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main #blog .blog .blog_right {
+  width: 49%;
+}
+main #blog .blog .blog_right img {
+  width: 100%;
+}
+main #blog .blog .blog_left {
+  width: 49%;
+}
+main #blog .blog .blog_left h3 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+}
+main #blog .blog .blog_left h5 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232536;
+}
+main #blog .blog .blog_left p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+}
+@media screen and (max-width: 991px) {
+  main #blog .blog .blog_left {
+    width: 100%;
+  }
+  main #blog .blog .blog_right {
+    width: 100%;
+  }
+}/*# sourceMappingURL=aboutus.css.map */

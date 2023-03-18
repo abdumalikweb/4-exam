@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/registr.css" />
 
-    <title>Login</title>
+    <title>Registr</title>
   </head>
   <body>
     <header id="header" class="fixed-top">
@@ -58,11 +58,10 @@
         </nav>
       </div>
     </header>
-
     <main>
-      <section id="login">
+      <section id="registr">
         <div class="container">
-          <h2 class="login-title">Login</h2>
+          <h2 class="registr-title">Register</h2>
           <form>
             <div class="mb-3">
               <input
@@ -70,6 +69,22 @@
                 class="form-control"
                 aria-describedby="emailHelp"
                 required
+                placeholder="Firstname"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Lastname"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
                 placeholder="Username"
               />
             </div>
@@ -81,12 +96,19 @@
                 placeholder="Password"
               />
             </div>
-            <button type="submit" class="btn">Login</button>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Confirm password"
+              />
+            </div>
+            <button type="submit" class="btn">Register</button>
           </form>
         </div>
       </section>
     </main>
-
     <footer>
       <div class="container">
         <div class="footer">
