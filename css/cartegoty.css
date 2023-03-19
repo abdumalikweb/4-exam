@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  position: fixed;
+  background: #232536;
+}
+#header nav {
+  padding: 10px 0;
+  background: #232536 !important;
+}
+#header nav .navbar-collapse {
+  flex-grow: 0;
+}
+#header nav .navbar-collapse ul li {
+  padding: 0px 12px;
+}
+#header nav .navbar-collapse ul li a {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+#header nav .navbar-collapse ul li a:hover {
+  color: #ffd050;
+}
+#header nav .navbar-collapse button {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232536;
+  padding: 16px 48px;
+  background: white;
+}
+#header nav .navbar-collapse button:hover {
+  background: #ffd050;
+}
+#header nav .navbar-collapse button a {
+  color: black;
+}
+
+footer {
+  background: #232536;
+  padding: 40px 0px;
+}
+footer p {
+  color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .footer .footer_right {
+  display: flex;
+  align-items: center;
+}
+footer .footer .footer_right img {
+  padding-left: 15px;
+}/*# sourceMappingURL=cartegoty.css.map */
