@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/myblog.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <title>About_us</title>
+  </head>
+  <body>
+    <header w3-include-html="header.html"></header>
+
+    <main>
+      <section id="myPost">
+        <div class="container">
+          <div class="myPost_title">
+            <h2>My posts</h2>
+
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#portfolio-modal"
+              id="modal-open-btn"
+            >
+              Add post
+            </button>
+          </div>
+          <input type="text" placeholder="Search..." />
+        </div>
+      </section>
+      <section id="blog">
+        <div class="container">
+          <div class="post">
+            <div class="item">
+              <div class="img">
+                <img
+                  src="./images/myblog/two-women-in-front-of-dry-erase-board-1181533.png"
+                  alt=""
+                />
+              </div>
+              <div class="text">
+                <p class="blog_title">Startup</p>
+                <h3>
+                  Design tips for designers that cover everything you need
+                </h3>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident.
+                </p>
+              </div>
+              <div class="button">
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#portfolio-modal"
+                  onclick="{editExp()}"
+                >
+                  <i class="bi bi-pencil-square"></i>
+                </button>
+                <button class="btn btn-danger" onclick="{deleteExp()}">
+                  <i class="bi bi-trash3"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer_left">
+            <p>Finstreet 118 2561 Fintown</p>
+            <p>crate by Abdumalik</p>
+          </div>
+          <div class="footer_right">
+            <a href="#"><img src="./images/footer/facebook.svg" alt="" /></a
+            ><a href="#"><img src="./images/footer/twitter.svg" alt="" /></a
+            ><a href="#"><img src="./images/footer/instagram.svg" alt="" /></a
+            ><a href="#"><img src="./images/footer/linkedin.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" tabindex="-1" id="portfolio-modal">
+      <form id="form" class="g-3 needs-validation" novalidate>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add portfolio</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  placeholder="Title"
+                  required
+                />
+                <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
+                <div class="invalid-feedback">Iltimos to'ldiring !</div>
+              </div>
+              <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="category"
+                  placeholder="Category"
+                  required
+                />
+                <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
+                <div class="invalid-feedback">Iltimos to'ldiring !</div>
+              </div>
+              <div class="mb-3">
+                <label for="image" class="form-label">Image</label>
+                <input
+                  type="file"
+                  id="image"
+                  class="form-control"
+                  placeholder="Image"
+                  required
+                />
+                <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
+                <div class="invalid-feedback">Iltimos to'ldiring !</div>
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea
+                  name="description"
+                  required
+                  id="description"
+                  placeholder="Description"
+                  cols="57%"
+                  rows="5"
+                ></textarea>
+                <div class="valid-feedback">Rahmat to'ldirganingiz uchun !</div>
+                <div class="invalid-feedback">Iltimos to'ldiring !</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="submit"
+                id="portfolio-add-btn"
+                class="btn btn-primary"
+              >
+                Add portfolio
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- javascript  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
+      integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/const.js"></script>
+    <script src="./js/request.js"></script>
+    <script src="./js/aboutUs.js"></script>
+  </body>
+</html>

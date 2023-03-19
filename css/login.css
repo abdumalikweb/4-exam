@@ -39,7 +39,7 @@ ul {
 #header nav .navbar-collapse ul li a:hover {
   color: #ffd050;
 }
-#header nav .navbar-collapse button {
+#header nav .navbar-collapse .button {
   font-family: "Sen";
   font-style: normal;
   font-weight: 700;
@@ -49,10 +49,10 @@ ul {
   padding: 16px 48px;
   background: white;
 }
-#header nav .navbar-collapse button:hover {
+#header nav .navbar-collapse .button:hover {
   background: #ffd050;
 }
-#header nav .navbar-collapse button a {
+#header nav .navbar-collapse .button a {
   color: black;
 }
 
