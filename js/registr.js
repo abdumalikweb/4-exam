@@ -13,16 +13,16 @@ registrForm.addEventListener("submit", function (e) {
   let check = this.checkValidity();
 
   if (check) {
-    // let form = new FormData();
     let data = {
-      fist_name: fistName.value,
+      first_name: fistName.value,
       last_name: lastName.value,
       username: userName.value,
       password: password.value,
     };
-console.log(12);
-    request.post("auth/register", data).then(() => {
+    request.post("auth/register", data).then((res) => {
+      console.log(res);
       alert("succsess");
+      window.location.href = "/login.html";
     });
   }
 });
