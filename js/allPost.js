@@ -13,7 +13,7 @@ function getPost({ _id, category, title, description, photo }) {
   return `
    <div class="item">
               <div class="img">
-                <img
+                <img style="height:400px;object-fit:cover;"
                   src="${IMAGE_URL}${photo._id}.${photo.name.split(".")[1]}"
                   alt="photo"
                 />
