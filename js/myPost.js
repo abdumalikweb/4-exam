@@ -8,6 +8,7 @@ const modalOpenBtn = document.getElementById("modal-open-btn");
 const portfolioModal = document.getElementById("portfolio-modal");
 const portfolioBtn = document.getElementById("portfolio-add-btn");
 const search = document.querySelector(".search");
+let selected= null;
 
 function getPost({ _id, category, title, description, photo }) {
   return `
@@ -107,3 +108,5 @@ function editExp(_id) {{
 //     });
 //   });
 // });
+
+editExp{}
