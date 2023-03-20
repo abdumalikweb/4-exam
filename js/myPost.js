@@ -88,6 +88,13 @@ function deleteExp(_id) {
   }
 }
 
+function editExp(_id) {{
+    request.put(`post/${_id}`).then(() => {
+      getCard();
+    });
+  }
+}
+
 // search.addEventListener("input", function (e) {
 //   e.preventDefault();
 //   request.get("post/user").then((res) => {
