@@ -14,7 +14,7 @@ loginForm.addEventListener("submit", function (e) {
     request.post("auth/login", data).then((res) => {
       console.log(res);
       localStorage.setItem(TOKEN, res.data.token);
-      window.location.href = "../index.html";
+      window.location.href = "../myPost.html";
     });
   }
 });
