@@ -9,7 +9,7 @@ const portfolioModal = document.getElementById("portfolio-modal");
 const portfolioBtn = document.getElementById("portfolio-add-btn");
 const search = document.querySelector(".search");
 
-function getPost({ _id, category, title, description, photo }) {
+function getPost({ _id, category, title, description, photo,user, updatedAt }) {
   return `
    <div class="item">
               <div class="img">
@@ -20,9 +20,11 @@ function getPost({ _id, category, title, description, photo }) {
               </div>
               <div class="text">
                 <p class="blog_title">${category.name}</p>
+               
                 <h3>
                   ${title}
                 </h3>
+                 <h6>By ${user.username}  </h6>
                 <p >
                   ${description}
                 </p>
