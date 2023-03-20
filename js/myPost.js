@@ -1,4 +1,4 @@
-const form = document.querySelector("#form");
+const formPost = document.querySelector("#form");
 const category = document.querySelector("#category");
 const image = document.querySelector("#image");
 const description = document.querySelector("#description");
@@ -7,8 +7,9 @@ const post = document.querySelector(".post");
 const modalOpenBtn = document.getElementById("modal-open-btn");
 const portfolioModal = document.getElementById("portfolio-modal");
 const portfolioBtn = document.getElementById("portfolio-add-btn");
+const search = document.querySelector(".search");
 
-function getPost({ title, category, description, _id, photo }) {
+function getPost({ _id, category, title, description, photo }) {
   return `
    <div class="item">
               <div class="img">
@@ -18,7 +19,7 @@ function getPost({ title, category, description, _id, photo }) {
                 />
               </div>
               <div class="text">
-                <p class="blog_title">${category}</p>
+                <p class="blog_title">${category.name}</p>
                 <h3>
                   ${title}
                 </h3>
@@ -46,29 +47,56 @@ function getPost({ title, category, description, _id, photo }) {
 function getCard() {
   post.innerHTML = "Loading...";
   request.get("post/user").then((res) => {
+    console.log(res.data.data);
     post.innerHTML = "";
-    post.innerHTML += getPost();
+    res.data.data.forEach((el) => {
+      post.innerHTML += getPost(el);
+    });
   });
 }
 getCard();
-form.addEventListener("submit", function (e) {
+
+formPost.addEventListener("submit", function (e) {
   e.preventDefault();
   this.classList.add("was-validated");
   let check = this.checkValidity();
   if (check) {
-    let form = new FormData();
-    form.append("file", image.files[0]);
-    request.post("upload", form);
+    // let form = new FormData();
+    // form.append("file", image.file[0]);
+    // requestImage.post("upload", form).then((res) => {
+    //   console.log(res);
+    // });
     let data = {
       title: title.value,
       description: description.value,
       category: "63de6eb268d03b5daea7dbca",
       photo: "6412131483b154fb6bf1199d",
     };
-    request.post("post", data).then(() => {
+    request.post("post", data).then((res) => {
       bootstrap.Modal.getInstance(portfolioModal).hide();
       alert("succsess");
       getCard();
     });
   }
 });
+function deleteExp(_id) {
+  let check = confirm("Rostanam o'chirishni xohlaysizmi ?");
+  if (check) {
+    request.delete(`post/${_id}`).then(() => {
+      getCard();
+    });
+  }
+}
+
+// search.addEventListener("input", function (e) {
+//   e.preventDefault();
+//   request.get("post/user").then((res) => {
+//     res.data.data.forEach((el) => {
+//        post.innerHTML += "";
+//       if (el.title.toLowerCase().includes(e.target.value.toLowerCase())) {
+//           post.innerHTML += "";
+//         post.innerHTML += getPost(el);
+//       }
+//     });
+//   });
+// });
