@@ -82,13 +82,38 @@ footer .footer .footer_right img {
   padding-left: 15px;
 }
 
-main {
-  padding: 100px 0;
+main #myPost {
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
-main #all_post_top .sec-top {
-  border-bottom: 1px solid rgb(191, 191, 191);
+main #myPost .myPost_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c8c9ca;
 }
-main #all_post_top .sec-top input {
+main #myPost .myPost_title h2 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+}
+main #myPost .myPost_title button {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232536;
+  outline: none;
+  padding: 16px 48px;
+  border: none;
+  background: #ffd050;
+}
+main #myPost input {
   outline: none;
   margin-top: 20px;
   width: 100%;
@@ -99,11 +124,7 @@ main #all_post_top .sec-top input {
   font-size: 16px;
   line-height: 28px;
 }
-main #all_post_top .sec-top h2 {
-  padding: 30px 0;
-}
 main #blog {
-  padding-top: 80px;
   padding-bottom: 100px;
 }
 main #blog .item {
@@ -158,4 +179,46 @@ main #blog .item .text p {
 main #blog .item .button button {
   margin-top: 5px;
   display: block;
+}
+@media screen and (max-width: 1200px) {
+  main #blog .item .img {
+    width: 40%;
+  }
+  main #blog .item .text {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  main #blog .item .img {
+    width: 100%;
+  }
+  main #blog .item .text {
+    padding-top: 25px;
+    width: 93%;
+  }
+  main #blog .item .button {
+    padding-top: 25px;
+  }
+}
+@media screen and (max-width: 776px) {
+  main #blog .item .img {
+    width: 100%;
+  }
+  main #blog .item .text {
+    padding-top: 25px;
+    width: 100%;
+  }
+  main #blog .item .button {
+    padding-top: 15px;
+  }
+  main #blog .item .button button {
+    display: inline;
+  }
+}
+
+textarea {
+  padding: 5px;
+  resize: none;
+  outline: none;
+  border-color: #d2d2d4;
 }
