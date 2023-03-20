@@ -61,11 +61,11 @@ formPost.addEventListener("submit", function (e) {
   this.classList.add("was-validated");
   let check = this.checkValidity();
   if (check) {
-    // let form = new FormData();
-    // form.append("file", image.file[0]);
-    // requestImage.post("upload", form).then((res) => {
-    //   console.log(res);
-    // });
+    let form = new FormData();
+    form.append("file", image.files[0]);
+    requestImage.post("upload", form).then((res) => {
+      console.log(res);
+    });
     let data = {
       title: title.value,
       description: description.value,
